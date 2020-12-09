@@ -95,3 +95,9 @@ E:\C# Programs\TradingView\TradingView\bin\Debug\netcoreapp3.1\runtimes\win7-x64
 E:\C# Programs\TradingView\TradingView\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
 E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\TradingView.csproj.CoreCompileInputs.cache
 E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\TradingView.MvcApplicationPartsAssemblyInfo.cache
+E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FOREXCOM\DJI.cshtml.g.cs
+E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FOREXCOM\SPXUSD.cshtml.g.cs
+E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FX\EURUSD.cshtml.g.cs
+E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FX\GBPUSD.cshtml.g.cs
+E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FX_IDC\RUBUSD.cshtml.g.cs
+E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\INDEX\DEU30.cshtml.g.cs
