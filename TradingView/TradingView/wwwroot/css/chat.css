@@ -1,0 +1,21 @@
+﻿body {
+    background-color: #e8e8e8;
+}
+
+#messages {
+    background-color: white;
+    width: 60vh;
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    max-height: 80vh;
+    margin-top: 25px;
+    overflow-y: auto;
+}
+
+#message-content {
+    width: 45vh;
+    position: relative;
+    margin: auto;
+    margin-top: 12px;
+}

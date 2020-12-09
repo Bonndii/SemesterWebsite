@@ -1,0 +1,42 @@
+﻿@page
+@model TradingView.Pages.SignUpModel
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+    </style>
+    <link href="~/css/signin.css" rel="stylesheet">
+</head>
+<body class="text-center">
+    <form class="form-signin" method="post" asp-page="signup" asp-anti-forgery="true">
+        <h1 class="h3 mb-3 font-weight-normal">Please Sign Up</h1>
+        <input id="inputFirstname" class="form-control" asp-for="@Model.user.Firstname" placeholder="First Name" required autofocus>
+        <input id="inputSurname" class="form-control" asp-for="@Model.user.Lastname" placeholder="Last Name" required autofocus>
+        <input id="inputEmail" class="form-control" asp-for="@Model.user.Email" placeholder="Email" required autofocus>
+        <input id="inputUsername" class="form-control" asp-for="@Model.user.Username" placeholder="Username" required autofocus>
+        <input type="password" id="inputPassword" class="form-control" asp-for="@Model.user.Password" placeholder="Password" required>
+        <input type="password" id="confirmPassword" class="form-control" asp-for="@Model.ConfirmPassword" placeholder="Confirm Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+        <a asp-page="signin">Sign In</a>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+    </form>
+</body>
+</html>

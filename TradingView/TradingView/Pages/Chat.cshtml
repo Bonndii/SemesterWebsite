@@ -1,0 +1,25 @@
+﻿@page
+@model TradingView.Pages.ChatModel
+@inject ChatManager ChatManager
+
+<head>
+    <link rel="stylesheet" href="~/css/chat.css" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul id="messages">
+                @foreach (var item in ChatManager.Messages)
+                {
+                    <li>@item.UserId: @item.Message</li>
+                }
+            </ul>
+            <input class="form-control" placeholder="Напишите сообщение" id="message-content" />
+        </div>
+    </div>
+</body>
+
+@section Scripts{
+    <script data-main="scripts/main" src="~/js/WebSocketManager.js"></script>
+}
