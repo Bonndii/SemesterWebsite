@@ -4,65 +4,160 @@
     ViewData["Title"] = "Home page";
 }
 
+<head>
+    <link href="~/css/trading.css" rel="stylesheet" />
+</head>
+
 <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Индексы</span></a> <span class="blue-text">и</span> <a href="https://ru.tradingview.com/markets/currencies/" rel="noopener" target="_blank"><span class="blue-text">Форекс</span></a> от TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-  {
-  "colorTheme": "light",
-  "dateRange": "12M",
-  "showChart": true,
-  "locale": "ru",
-  "largeChartUrl": "https://localhost:44347/{tvexchange}/{tvsymbol}",
-  "isTransparent": false,
-  "showSymbolLogo": true,
-  "width": "400",
-  "height": "660",
-  "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
-  "plotLineColorFalling": "rgba(33, 150, 243, 1)",
-  "gridLineColor": "rgba(240, 243, 250, 1)",
-  "scaleFontColor": "rgba(120, 123, 134, 1)",
-  "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
-  "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
-  "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
-  "tabs": [
-    {
-      "title": "Индексы",
-      "symbols": [
-        {
-          "s": "FOREXCOM:SPXUSD",
-          "d": "S&P 500"
-        },
-        {
-          "s": "FOREXCOM:DJI",
-          "d": "Dow 30"
-        },
-        {
-          "s": "INDEX:DEU30",
-          "d": "DAX Index"
-        }
-      ],
-      "originalTitle": "Indices"
-    },
-    {
-      "title": "Форекс",
-      "symbols": [
-        {
-          "s": "FX:EURUSD"
-        },
-        {
-          "s": "FX:GBPUSD"
-        },
-        {
-          "s": "FX_IDC:RUBUSD",
-          "d": "Рубль / Доллар США"
-        }
-      ],
-      "originalTitle": "Forex"
-    }
-  ]
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
+<div class="tradingview-widget-container" id="index">
+    <div class="tv-feed-widget__header-inner">
+        <h3 class="tv-feed-widget__title js-hotlists-dropdown">
+            <a class="tv-feed-widget__title-link js-widget-title-link" asp-page="/Indexes">
+                Индексы<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14">
+                </svg>
+            </a>
+        </h3>
+     </div>
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Основные</span></a> от TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+            {
+                "colorTheme": "light",
+                    "dateRange": "12M",
+                        "showChart": true,
+                            "locale": "ru",
+                                "largeChartUrl": "https://localhost:44347/{tvexchange}/{tvsymbol}",
+                                    "isTransparent": false,
+                                        "showSymbolLogo": true,
+                                            "width": "400",
+                                                "height": "660",
+                                                    "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
+                                                        "plotLineColorFalling": "rgba(33, 150, 243, 1)",
+                                                            "gridLineColor": "rgba(240, 243, 250, 1)",
+                                                                "scaleFontColor": "rgba(120, 123, 134, 1)",
+                                                                    "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+                                                                        "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+                                                                            "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+                                                                                "tabs": [
+                                                                                    {
+                                                                                        "title": "Основные",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "s": "FOREXCOM:SPXUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "s": "FOREXCOM:DJI"
+                                                                                            },
+                                                                                            {
+                                                                                                "s": "XETR:DAX"
+                                                                                            }
+                                                                                        ],
+                                                                                        "originalTitle": "Indices"
+                                                                                    }
+                                                                                ]
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" id="stock">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Активные</span></a> от TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+            {
+                "colorTheme": "light",
+                    "dateRange": "12M",
+                        "showChart": true,
+                            "locale": "ru",
+                                "largeChartUrl": "https://localhost:44347/{tvexchange}/{tvsymbol}",
+                                    "isTransparent": false,
+                                        "showSymbolLogo": true,
+                                            "width": "400",
+                                                "height": "660",
+                                                    "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
+                                                        "plotLineColorFalling": "rgba(33, 150, 243, 1)",
+                                                            "gridLineColor": "rgba(240, 243, 250, 1)",
+                                                                "scaleFontColor": "rgba(120, 123, 134, 1)",
+                                                                    "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+                                                                        "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+                                                                            "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+                                                                                "tabs": [
+                                                                                    {
+                                                                                        "title": "Активные",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "s": "NASDAQ:AAPL"
+                                                                                            },
+                                                                                            {
+                                                                                                "s": "NASDAQ:TSLA"
+                                                                                            },
+                                                                                            {
+                                                                                                "s": "NASDAQ:AAL"
+                                                                                            }
+                                                                                        ],
+                                                                                        "originalTitle": "Indices"
+                                                                                    }
+                                                                                ]
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" id="currency">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Основные</span></a> <span class="blue-text">и</span> <a href="https://ru.tradingview.com/markets/currencies/" rel="noopener" target="_blank"><span class="blue-text">Криптовалюта</span></a> от TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+            {
+                "colorTheme": "light",
+                    "dateRange": "12M",
+                        "showChart": true,
+                            "locale": "ru",
+                                "largeChartUrl": "https://localhost:44347/{tvexchange}/{tvsymbol}",
+                                    "isTransparent": false,
+                                        "showSymbolLogo": true,
+                                            "width": "400",
+                                                "height": "660",
+                                                    "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
+                                                        "plotLineColorFalling": "rgba(33, 150, 243, 1)",
+                                                            "gridLineColor": "rgba(240, 243, 250, 1)",
+                                                                "scaleFontColor": "rgba(120, 123, 134, 1)",
+                                                                    "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+                                                                        "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+                                                                            "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+                                                                                "tabs": [
+                                                                                    {
+                                                                                        "title": "Основные",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "s": "FX:EURUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "s": "FX:GBPUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "s": "FX_IDC:RUBUSD"
+                                                                                            }
+                                                                                        ],
+                                                                                        "originalTitle": "Indices"
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Криптовалюта",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "s": "BITSTAMP:BTCUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "s": "BITSTAMP:ETHUSD"
+                                                                                            }
+                                                                                        ],
+                                                                                        "originalTitle": "Forex"
+                                                                                    }
+                                                                                ]
+            }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->

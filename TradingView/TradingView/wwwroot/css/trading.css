@@ -1,6 +1,25 @@
 ﻿body {
 }
 
+#index {
+    margin: 0 auto;
+    position: relative;
+    right: 450px;
+}
+
+#stock {
+    position: relative;
+    bottom: 660px;
+    margin: 0 auto;
+}
+
+#currency {
+    margin: 0 auto;
+    position: relative;
+    bottom: 1320px;
+    left: 450px;
+}
+
 #djiprofile {
     margin: 0 auto;
 }
@@ -17,11 +36,11 @@
     margin: 0 auto;
 }
 
-#deuprofile {
+#daxprofile {
     margin: 0 auto;
 }
 
-#deuanalysis {
+#daxanalysis {
     margin: 0 auto;
 }
 

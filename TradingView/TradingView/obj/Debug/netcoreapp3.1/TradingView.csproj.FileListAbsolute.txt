@@ -100,4 +100,5 @@ E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FOREX
 E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FX\EURUSD.cshtml.g.cs
 E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FX\GBPUSD.cshtml.g.cs
 E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\FX_IDC\RUBUSD.cshtml.g.cs
-E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\INDEX\DEU30.cshtml.g.cs
+E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\XETR\DAX.cshtml.g.cs
+E:\C# Programs\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\Indexes.cshtml.g.cs
