@@ -72,7 +72,12 @@ body {
 
 #signin {
     position: absolute;
-    right: 25px;
+    right: 110px;
+}
+
+#signup {
+    position: absolute;
+    right: 15px;
 }
 
 #profile {

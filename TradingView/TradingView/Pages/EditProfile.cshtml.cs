@@ -9,12 +9,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
 
 namespace TradingView.Pages
 {
     public class EditProfileModel : PageModel
     {
-
         private UserContext db;
 
         [BindProperty]
@@ -51,6 +51,7 @@ namespace TradingView.Pages
                 user.Lastname = Lastname;
                 db.Entry(user).State = EntityState.Modified;
                 db.SaveChanges();
+                return RedirectToPage("Profile");
             }
 
             if (CurrentPassword == user.Password && NewPassword != null)

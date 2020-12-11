@@ -1,3 +1,43 @@
 ﻿@page
 @model TradingView.Pages.IndexesModel
 
+<head>
+    <link href="~/css/trading1.css" rel="stylesheet" />
+</head>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" id="table">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Индексы</span></a> от TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+  {
+  "largeChartUrl": "https://localhost:44347/{tvexchange}/{tvsymbol}",
+  "width": 770,
+  "height": 450,
+  "symbolsGroups": [
+    {
+      "name": "Индексы",
+      "originalName": "Indices",
+      "symbols": [
+        {
+          "name": "FOREXCOM:SPXUSD",
+          "displayName": "S&P 500"
+        },
+        {
+          "name": "FOREXCOM:DJI",
+          "displayName": "Dow 30"
+        },
+        {
+          "name": "XETR:DAX"
+        }
+      ]
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": false,
+  "locale": "ru"
+}
+    </script>
+</div>
+<!-- TradingView Widget END -->

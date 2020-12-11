@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc
+@using Microsoft.AspNetCore.Authorization
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" id="one">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">TradingView</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -31,13 +33,14 @@
                                     <a class="nav-link text-dark" id="profile" asp-area="" asp-page="/Profile">@User.Identity.Name</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link text-dark" id="logout" asp-area="" asp-page-handler="Logout">Logout</a>
+                                    <a class="nav-link text-dark" id="logout" asp-area="" asp-page-handler="Logout">Выйти</a>
                                 </li>
                             }
                             else
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" id="signin" asp-area="" asp-page="/SignIn">Sign In</a>
+                                    <a class="nav-link text-dark" id="signin" asp-area="" asp-page="/SignIn">Войти / </a>
+                                    <a class="nav-link text-dark" id="signup" asp-area="" asp-page="/SignUp">Регистрация</a>
                                 </li>
                             }
                         }
@@ -45,6 +48,7 @@
                 </div>
             </div>
         </nav>
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">

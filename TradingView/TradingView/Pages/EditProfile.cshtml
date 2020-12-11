@@ -44,7 +44,7 @@
                                     <div class="form-group">
                                         <label class="form-label">Username</label>
                                         <input type="text" class="form-control mb-1" asp-for="@Model.Username"
-                                               value="@db.Users.FirstOrDefault(u => u.Username == User.Identity.Name).Username">
+                                               value="@User.Identity.Name">
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label">First Name</label>

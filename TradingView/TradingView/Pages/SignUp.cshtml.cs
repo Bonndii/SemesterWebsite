@@ -35,7 +35,7 @@ namespace TradingView.Pages
             string pattern = @"([\S-\.]+)@";
             if(Regex.IsMatch(user.Email, pattern))
             {
-                if (db.Users.FirstOrDefault(u => u.Email == user.Email && u.Username == user.Username) == null && user.Password == ConfirmPassword)
+                if (db.Users.FirstOrDefault(u => u.Email == user.Email || u.Username == user.Username) == null && user.Password == ConfirmPassword)
                 {
                     db.Users.Add(user);
 
