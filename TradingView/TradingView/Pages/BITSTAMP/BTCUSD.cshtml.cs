@@ -38,7 +38,8 @@ namespace TradingView.Pages.BITSTAMP
             }
             else
             {
-                db.Subscriptions.Remove(db.Subscriptions.FirstOrDefault(s => s.User == user && s.Name == "BTCUSD" && s.Exchange == "BITSTAMP"));
+                db.Subscriptions.Remove(db.Subscriptions.FirstOrDefault(s => s.User == user && s.Name == "BTCUSD" && 
+                s.Exchange == "BITSTAMP"));
                 db.SaveChanges();
             }
         }

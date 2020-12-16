@@ -201,7 +201,6 @@ E:\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\Indexes.cshtml.g.
 E:\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\NASDAQ\AAL.cshtml.g.cs
 E:\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\NASDAQ\AAPL.cshtml.g.cs
 E:\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\NASDAQ\TSLA.cshtml.g.cs
-E:\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 E:\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\Profile.cshtml.g.cs
 E:\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 E:\TradingView\TradingView\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs

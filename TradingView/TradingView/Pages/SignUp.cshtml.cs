@@ -35,7 +35,8 @@ namespace TradingView.Pages
             string pattern = @"([\S-\.]+)@";
             if(Regex.IsMatch(user.Email, pattern))
             {
-                if (db.Users.FirstOrDefault(u => u.Email == user.Email || u.Username == user.Username) == null && user.Password == ConfirmPassword)
+                if (db.Users.FirstOrDefault(u => u.Email == user.Email || u.Username == user.Username) == null && 
+                    user.Password == ConfirmPassword)
                 {
                     db.Users.Add(user);
 
@@ -52,14 +53,15 @@ namespace TradingView.Pages
 
         private async Task Authenticate(string userName)
         {
-            // создаем один claim
+            
             var claims = new List<Claim>
             {
                 new Claim(ClaimsIdentity.DefaultNameClaimType, userName)
             };
-            // создаем объект ClaimsIdentity
-            ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
-            // установка аутентификационных куки
+            
+            ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, 
+                ClaimsIdentity.DefaultRoleClaimType);
+            
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
         }
     }
