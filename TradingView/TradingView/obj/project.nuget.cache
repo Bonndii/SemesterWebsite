@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2EeX2GNH4yVUFim7Wcd/bDMZ7y5gmmVKJ9kk2hW5wrB4L8MXYGzD4eVjbffJHceR1pCPkuM2SDnplXmb4IHcOA==",
+  "dgSpecHash": "uMGeL7uEHtWcLSDiEnGgevtnVMLBNU9OM5iHFJiB8kzf4LwIxuet7sOhEX5a2d0izBgLSN47VhGwigjTNtfD4g==",
   "success": true,
-  "projectFilePath": "E:\\C# Programs\\TradingView\\TradingView\\TradingView.csproj",
+  "projectFilePath": "E:\\TradingView\\TradingView\\TradingView.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexm\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\alexm\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",

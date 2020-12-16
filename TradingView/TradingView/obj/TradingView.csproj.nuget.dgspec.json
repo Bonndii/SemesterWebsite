@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# Programs\\TradingView\\TradingView\\TradingView.csproj": {}
+    "E:\\TradingView\\TradingView\\TradingView.csproj": {}
   },
   "projects": {
-    "E:\\C# Programs\\TradingView\\TradingView\\TradingView.csproj": {
+    "E:\\TradingView\\TradingView\\TradingView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# Programs\\TradingView\\TradingView\\TradingView.csproj",
+        "projectUniqueName": "E:\\TradingView\\TradingView\\TradingView.csproj",
         "projectName": "TradingView",
-        "projectPath": "E:\\C# Programs\\TradingView\\TradingView\\TradingView.csproj",
+        "projectPath": "E:\\TradingView\\TradingView\\TradingView.csproj",
         "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
-        "outputPath": "E:\\C# Programs\\TradingView\\TradingView\\obj\\",
+        "outputPath": "E:\\TradingView\\TradingView\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",

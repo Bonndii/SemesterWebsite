@@ -1,5 +1,10 @@
 ﻿$(document).ready(function () {
-    var EmailRegEx = /@/;
+
+    $(document).on("click", "#signupbut", function () {
+        if (6 > document.getElementById("inputPassword").value.length) {
+            return false;
+        }
+    });
 
 
 
